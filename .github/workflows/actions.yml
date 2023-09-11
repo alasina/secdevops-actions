@@ -20,7 +20,9 @@ jobs:
           path: '.'
           format: 'JSON'
           out: 'reports' # this is the default, no need to specify unless you wish to override it
-      - name: Print results
-        run:
-          cat ./reports/dependency-check-report.json
+      - name: Upload Test results
+        uses: actions/upload-artifact@master
+        with:
+           name: Depcheck report
+           path: ${{github.workspace}}/reports
         
