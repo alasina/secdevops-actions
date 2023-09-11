@@ -22,5 +22,5 @@ jobs:
           out: 'reports' # this is the default, no need to specify unless you wish to override it
       - name: Print results
         run:
-          ls ./reports
+          cat ./reports/dependency-check-report.html
         
