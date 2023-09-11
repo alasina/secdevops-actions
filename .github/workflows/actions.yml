@@ -18,7 +18,7 @@ jobs:
         with:
           project: 'secdevops-actions'
           path: '.'
-          format: 'JSON'
+          format: 'HTML'
           out: 'reports' # this is the default, no need to specify unless you wish to override it
       - name: Upload Test results
         uses: actions/upload-artifact@master
