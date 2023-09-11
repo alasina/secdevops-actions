@@ -28,6 +28,9 @@
                         <configuration>
                             <finalName>${project.artifactId}-${project.version}</finalName>
                             <appendAssemblyId>false</appendAssemblyId>
+                            <descriptors>
+                                <descriptor>assembly/assembly.xml</descriptor>
+                            </descriptors>
                         </configuration>
                         <phase>package</phase>
                         <goals>
