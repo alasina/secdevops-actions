@@ -18,9 +18,9 @@ jobs:
         with:
           project: 'secdevops-actions'
           path: '.'
-          format: 'HTML'
+          format: 'JSON'
           out: 'reports' # this is the default, no need to specify unless you wish to override it
       - name: Print results
         run:
-          cat ./reports/dependency-check-report.html
+          cat ./reports/dependency-check-report.json
         
